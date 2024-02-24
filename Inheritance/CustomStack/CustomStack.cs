@@ -4,13 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CustomRandomList
+namespace CustomStack
 {
-    public class StartUp
+    internal class CustomStack
     {
-        public static void Main(string[] args)
-        { 
-            
-        }
     }
 }
