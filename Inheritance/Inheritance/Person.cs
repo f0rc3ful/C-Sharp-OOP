@@ -43,10 +43,7 @@ namespace Inheritance
 			get { return personalIDCode; }
 			set { personalIDCode = value; }
 		}
-		public Person()
-		{
-
-		}
+		public Person() { }
 		public Person(int personalIDcode)
 		{
 			PersonalIDCode = personalIDcode;
