@@ -47,9 +47,16 @@ namespace Inheritance
 		{
 			PersonalIDCode = personalIDcode;
 		}
-		public Person(int personalIDcode, string residence) : this(personalIDcode) // inherit previous constructor
+		public Person(int personalIDcode, string residence) : this(personalIDcode) // constructor chaining
 		{
 			Residence = residence;	
 		}
-	}
+
+		public Person(int personalIDcode, string residence, string nationality, int age) : this(personalIDcode, residence)
+		{
+			Nationality = nationality;
+			Age = age;
+		}
+        // further consntructor chaining
+    }
 }
