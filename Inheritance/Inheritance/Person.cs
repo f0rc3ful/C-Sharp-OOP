@@ -6,7 +6,50 @@ using System.Threading.Tasks;
 
 namespace Inheritance
 {
-    internal class Person
+    public class Person
     {
-    }
+		private string name;
+
+		public string Name
+		{
+			get { return name; }
+			set { name = value; }
+		}
+		private int age;
+
+		public int Age
+		{
+			get { return age; }
+			set { age = value; }
+		}
+		private string residence;
+
+		public string Residence
+		{
+			get { return residence; }
+			set { residence = value; }
+		}
+		private string nationality;
+
+		public string Nationality
+		{
+			get { return nationality; }
+			set { nationality = value; }
+		}
+		private int personalIDCode;
+
+		public int PersonalIDCode
+		{
+			get { return personalIDCode; }
+			set { personalIDCode = value; }
+		}
+		public Person(int personalIDcode)
+		{
+			PersonalIDCode = personalIDcode;
+		}
+		public Person(int personalIDcode, string residence) : this(personalIDcode) // inherit previous constructor
+		{
+			Residence = residence;	
+		}
+	}
 }
