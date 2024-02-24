@@ -4,9 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Hierarchical_Inheritance
+namespace Farm
 {
-    internal class StartUp
+    public class StartUp
     {
+        public static void Main(string[] args)
+        {
+            Dog dog = new Dog();
+            dog.Eat();
+            dog.Bark();
+
+            Cat cat = new Cat();
+            cat.Eat();
+            cat.Meow();
+        }
     }
 }

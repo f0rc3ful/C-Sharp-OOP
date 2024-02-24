@@ -4,9 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Hierarchical_Inheritance
+namespace Farm
 {
-    internal class Animal
+    public class Animal
     {
+        public void Eat()
+        {
+            Console.WriteLine("eating...");
+        }
     }
 }
