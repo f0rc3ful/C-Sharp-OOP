@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace CustomRandomList
 {
-    internal class StartUp
+    public class StartUp
     {
+        public static void Main(string[] args)
+        { 
+            RandomList list = new RandomList();
+            list.Add("Jason");
+            list.Add("Cindy");
+            list.Add("Melissa");
+            Console.WriteLine(list.RandomString());
+        }
     }
 }

@@ -6,22 +6,19 @@ using System.Threading.Tasks;
 
 namespace CustomRandomList
 {
-    public class RandomList
+    public class RandomList : List<string>
     {
-		private List<string> CustomList;
+		private RandomList customList;
 
-		public List<string> CustomList
+		public RandomList CustomList
 		{
-			get { return CustomList; }
-			set { CustomList = value; }
+			get { return customList; }
+			set { customList = value; }
 		}
-		public string RandomString()
-		{
-			Random random = new Random();
-			int randomIndex = random.Next(CustomList.Count - 1);
-			string output = CustomList[randomIndex];
-			CustomList.RemoveAt(randomIndex);
-			return output;
+		private Random random = new Random();
+        public string RandomString()
+		{			
+			return this[random.Next(0, this.Count)];
 		}
 
 	}
