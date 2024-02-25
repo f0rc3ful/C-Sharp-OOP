@@ -1,5 +1,4 @@
-﻿using System;
-namespace Zoo
+﻿namespace Zoo
 {
     public class StartUp
     {
