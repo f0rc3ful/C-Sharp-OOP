@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Zoo
 {
-    internal class Gorilla
+    public class Gorilla : Mammal
     {
+        public Gorilla(string name) : base(name)
+        {
+
+        }
     }
 }

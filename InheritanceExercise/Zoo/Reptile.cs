@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace Zoo
 {
-    public class Reptile
+    public class Reptile : Animal
     {
+        public Reptile(string name) : base(name)
+        {
 
+        }
     }
 }
