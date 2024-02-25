@@ -9,20 +9,16 @@ namespace Person
     public class Child : Person
     {
         private int age;
-        public int Age
+        public override int Age
         {
-            get { return age; }
+            get { return base.Age; }
             set
             {
-                if (value < 0)
-                {
-                    throw new ArgumentException("Age cannot be less than 0.");
-                }
-                else if (value > 15)
+                if (value > 15)
                 {
                     throw new ArgumentException("Age cannot exceed 15 for children.");
                 }
-                age = value;
+                base.Age = value;
             }
         }
         public Child(string name, int age) :base(name, age)
