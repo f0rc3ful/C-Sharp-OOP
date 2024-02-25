@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace NeedForSpeed
 {
-    public class Motorcycle : Vehicle
+    public class FamilyCar : Car
     {
-        public Motorcycle(int horsePower, int fuel) : base(horsePower, fuel)
+        public FamilyCar(int horsePower, int fuel) : base(horsePower, fuel)
         {
 
         }
