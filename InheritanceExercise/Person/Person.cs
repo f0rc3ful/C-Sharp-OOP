@@ -8,6 +8,13 @@ namespace Person
 {
     public class Person
     {
+		private string name;
+
+		public string Name
+		{
+			get { return name; }
+			set { name = value; }
+		}
 		private int age;
 
 		public int Age
@@ -19,15 +26,8 @@ namespace Person
 				{
 					throw new ArgumentException("Age cannot be less than 0.");
 				}
-				age = value;
+				age = value; 
 			}
-		}
-		private string name;
-
-		public string Name
-		{
-			get { return name; }
-			set { name = value; }
 		}
 		public Person(string name, int age)
 		{
