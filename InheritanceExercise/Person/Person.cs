@@ -13,7 +13,14 @@ namespace Person
 		public int Age
 		{
 			get { return age; }
-			set { age = value; }
+			set 
+			{
+				if (value < 0)
+				{
+					throw new ArgumentException("Age cannot be less than 0.");
+				}
+				age = value;
+			}
 		}
 		private string name;
 
