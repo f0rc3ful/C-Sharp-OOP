@@ -9,11 +9,10 @@ namespace NeedForSpeed
     public class RaceMotorcycle : Motorcycle
     {
         public override double FuelConsumption 
-        { 
-            get => base.FuelConsumption; 
-            set => base.FuelConsumption = 8; 
+        {
+            get { return 8; }
+            set { }
         }
-
         public RaceMotorcycle(int horsePower, int fuel) : base(horsePower, fuel)
         {
 

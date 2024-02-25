@@ -27,7 +27,7 @@ namespace NeedForSpeed
 		public double DefaultFuelConsumption
 		{
 			get { return defaultFuelConsumption; }
-			set { defaultFuelConsumption = 1.25; }
+			set { defaultFuelConsumption = value; }
 		}
 		private double fuelConsumption;
 
@@ -40,10 +40,11 @@ namespace NeedForSpeed
 		{
 			HorsePower = horsePower;
 			Fuel = fuel;
+			DefaultFuelConsumption = 1.25;
 		}
 		public virtual void Drive(double kilometers)
 		{
-			fuel -= kilometers * defaultFuelConsumption;
+			fuel -= (kilometers / 100) * FuelConsumption;
 		}
         public override string ToString()
         {

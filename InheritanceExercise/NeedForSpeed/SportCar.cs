@@ -8,14 +8,11 @@ namespace NeedForSpeed
 {
     public class SportCar : Car
     {
-        private double fuelConsumption;
-
         public override double FuelConsumption
         {
-            get { return fuelConsumption; }
-            set { fuelConsumption = 10; }
+            get { return 10; }
+            set { }
         }
-
         public SportCar(int horsePower, int fuel) : base(horsePower, fuel)
         {
 
