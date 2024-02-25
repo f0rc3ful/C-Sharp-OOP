@@ -46,9 +46,5 @@ namespace NeedForSpeed
 		{
 			fuel -= (kilometers / 100) * FuelConsumption;
 		}
-        public override string ToString()
-        {
-            return $"The {this.GetType().Name} with {horsePower} HP has {fuel}l of fuel left!";
-        }
     }
 }
