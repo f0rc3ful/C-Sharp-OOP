@@ -13,21 +13,42 @@ namespace Animals
 		public string Name
 		{
 			get { return name; }
-			set { name = value; }
+			set 
+			{
+                if (string.IsNullOrEmpty(value))
+                {
+                    throw new ArgumentNullException("Invalid input!");
+                }
+                name = value; 
+			}
 		}
 
 		private int age;
 		public int Age
 		{
 			get { return age; }
-			set { age = value; }
+			set 
+			{
+                if (value < 0)
+                {
+                    throw new ArgumentNullException("Invalid input!");
+                }
+                age = value; 
+			}
 		}
 
         private string gender;
         public string Gender
         {
             get { return gender; }
-            set { gender = value; }
+            set 
+			{
+				if (string.IsNullOrEmpty(value))
+				{ 
+					throw new ArgumentNullException("Invalid input!");
+				}
+				gender = value; 
+			}
         }
 		public Animal(string name, int age, string gender)
 		{
