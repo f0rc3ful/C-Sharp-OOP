@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Restaurant
 {
-    internal class Cake
+    public class Cake : Dessert
     {
+        public Cake(string name, decimal CakePrice, double CakeGrams, double CakeCalories) :base(name, 5, 250, 1000)
+        {
+            
+        }
     }
 }

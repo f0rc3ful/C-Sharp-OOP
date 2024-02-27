@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Restaurant
+namespace Animals
 {
-    public class Fish : MainDish
+    public class Kitten : Cat
     {
-        public Fish(string name, decimal price, double FishGrams) : base(name, price, 22)
+        public void ProduceSound()
         {
-
+            Console.WriteLine("Meow");
         }
     }
 }

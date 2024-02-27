@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Restaurant
 {
-    internal class Soup
+    public class Soup : Starter
     {
+        public Soup(string name, decimal price, double grams) : base(name, price, grams)
+        {
+
+        }
     }
 }
