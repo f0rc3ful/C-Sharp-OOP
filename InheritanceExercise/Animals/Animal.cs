@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Animals
 {
-    public class Animal
+    public abstract class Animal
     {
 		private string name;
 
@@ -56,5 +56,6 @@ namespace Animals
 			Age = age;
 			Gender = gender;
 		}
+		public abstract string ProduceSound();
     }
 }

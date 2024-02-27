@@ -12,9 +12,9 @@ namespace Animals
         {
             Gender = "Female";
         }
-        public void ProduceSound()
+        public override string ProduceSound()
         {
-            Console.WriteLine("Meow");
+            return "Meow";
         }
     }
 }
