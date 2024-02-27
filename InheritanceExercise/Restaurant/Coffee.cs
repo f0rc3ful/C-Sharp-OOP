@@ -13,14 +13,14 @@ namespace Restaurant
 		public double CoffeeMilliliters
 		{
 			get { return coffeeMilliliters; }
-			set { coffeeMilliliters = 50; }
+			set { coffeeMilliliters = value; }
 		}
 		private decimal coffeePrice;
 
 		public decimal CoffeePrice
 		{
 			get { return coffeePrice; }
-			set { coffeePrice = 3.5m; } // setting a decimal value requres an 'm' after the numerical value
+			set { coffeePrice = value; } // setting a decimal value requres an 'm' after the numerical value
 		}
 		private double caffeine;
 
@@ -29,7 +29,7 @@ namespace Restaurant
 			get { return caffeine; }
 			set { caffeine = value; }
 		}
-		public Coffee(string name, decimal price, double milliliters, double caffeine) : base(name, price, milliliters)
+		public Coffee(string name, decimal price, double milliliters, double caffeine) : base(name, 3.5m, 50)
         {
 			Caffeine = caffeine;
 		}
