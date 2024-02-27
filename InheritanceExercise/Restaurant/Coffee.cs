@@ -8,20 +8,10 @@ namespace Restaurant
 {
     public class Coffee : HotBeverage
     {
-		private double coffeeMilliliters;
+		private const double coffeeMilliliters = 50;
 
-		public double CoffeeMilliliters
-		{
-			get { return coffeeMilliliters; }
-			set { coffeeMilliliters = value; }
-		}
-		private decimal coffeePrice;
+		private const decimal coffeePrice = 3.5m;
 
-		public decimal CoffeePrice
-		{
-			get { return coffeePrice; }
-			set { coffeePrice = value; } // setting a decimal value requres an 'm' after the numerical value
-		}
 		private double caffeine;
 
 		public double Caffeine
@@ -29,7 +19,7 @@ namespace Restaurant
 			get { return caffeine; }
 			set { caffeine = value; }
 		}
-		public Coffee(string name, decimal price, double milliliters, double caffeine) : base(name, 3.5m, 50)
+		public Coffee(string name, decimal price, double milliliters, double caffeine) : base(name, coffeePrice, coffeeMilliliters)
         {
 			Caffeine = caffeine;
 		}
