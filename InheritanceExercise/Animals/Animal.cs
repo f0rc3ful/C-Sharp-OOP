@@ -57,5 +57,10 @@ namespace Animals
 			Gender = gender;
 		}
 		public abstract string ProduceSound();
+
+        public override string ToString()
+        {
+            return $"{Name} {Age} {Gender}";
+        }
     }
 }
