@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Restaurant
 {
-    internal class Food
+    public class Food : Product
     {
+        public Food(string name, decimal price) : base(name, price)
+        {
+
+        }
     }
 }
