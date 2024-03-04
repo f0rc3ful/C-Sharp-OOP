@@ -46,13 +46,13 @@ namespace PersonsInfo
 		}
 		public void IncreaseSalary(decimal percentage)
 		{
-			if (Age < 30)
+			if (this.Age < 30)
 			{
-				Salary += Salary * percentage / 100;
+				this.Salary += Salary * percentage / 100;
 			}
 			else
 			{
-                Salary += Salary * percentage / 200; // employees younger than 30 receive half the raise
+                this.Salary += Salary * percentage / 200; // employees younger than 30 receive half the raise
             }
 		}
         public override string ToString()
