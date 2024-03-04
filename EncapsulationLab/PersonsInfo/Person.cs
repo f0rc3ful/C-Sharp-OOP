@@ -12,30 +12,54 @@ namespace PersonsInfo
 
 		public string FirstName
 		{
-			get { return firstName; }
-			set { firstName = value; }
+			get { return this.firstName; }
+			private set 
+			{
+				if (value.Length < 3)
+				{
+					throw new ArgumentException("First name cannot contain fewer than 3 symbols!");
+				}
+			}
 		}
 		private string lastName;
 
 		public string LastName
 		{
-			get { return lastName; }
-			set { lastName = value; }
-		}
+			get { return this.lastName; }
+            private set
+            {
+                if (value.Length < 3)
+                {
+                    throw new ArgumentException("Last name cannot contain fewer than 3 symbols!");
+                }
+            }
+        }
 		private int age;
 
 		public int Age
 		{
-			get { return age; }
-			set { age = value; }
-		}
+			get { return this.age; }
+            private set
+            {
+                if (value < 1)
+                {
+                    throw new ArgumentException("Age cannot be zero or a negative integer!");
+                }
+            }
+        }
 		private decimal salary;
 
 		public decimal Salary
 		{
-			get { return salary; }
-			set { salary = value; }
-		}
+			get { return this.salary; }
+            private set
+            {
+                if (value < 650)
+                {
+                    throw new ArgumentException("Salary cannot be less than 650 leva!");
+                }
+            }
+        }
 
 		public Person(string firstName, string lastName, int age, decimal salary)
 		{
