@@ -45,8 +45,15 @@ namespace PersonsInfo
 			Salary = salary;
 		}
 		public void IncreaseSalary(decimal percentage)
-		{ 
-			Salary += Salary * percentage / 100;
+		{
+			if (Age < 30)
+			{
+				Salary += Salary * percentage / 100;
+			}
+			else
+			{
+                Salary += Salary * percentage / 200; // employees younger than 30 receive half the raise
+            }
 		}
         public override string ToString()
         {
