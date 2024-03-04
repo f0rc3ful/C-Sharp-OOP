@@ -29,11 +29,24 @@ namespace PersonsInfo
 			get { return age; }
 			set { age = value; }
 		}
-		public Person(string first, string last, int age)
+		private decimal salary;
+
+		public decimal Salary
 		{
-			FirstName = first;
-			LastName = last;
+			get { return salary; }
+			set { salary = value; }
+		}
+
+		public Person(string firstName, string lastName, int age, decimal salary)
+		{
+			FirstName = firstName;
+			LastName = lastName;
 			Age = age;
+			Salary = salary;
+		}
+		public void IncreaseSalary(decimal percentage)
+		{ 
+			Salary *= percentage;
 		}
         public override string ToString()
         {
