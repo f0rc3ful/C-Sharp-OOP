@@ -46,11 +46,11 @@ namespace PersonsInfo
 		}
 		public void IncreaseSalary(decimal percentage)
 		{ 
-			Salary *= percentage;
+			Salary += Salary * percentage / 100;
 		}
         public override string ToString()
         {
-            return $"{firstName} {lastName} is {age} years old.";
+            return $"{firstName} {lastName} receives {salary:F2} leva.";
         }
     }
 }
