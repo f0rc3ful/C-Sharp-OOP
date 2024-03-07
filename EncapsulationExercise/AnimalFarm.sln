@@ -5,7 +5,9 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnimalFarm", "AnimalFarm\AnimalFarm.csproj", "{9F3A2AD9-BD29-4728-B2DE-DF94C86E5B2B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassBoxData", "ClassBoxData\ClassBoxData.csproj", "{061122FF-1A04-4154-86EF-F616E8512650}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassBoxData", "ClassBoxData\ClassBoxData.csproj", "{061122FF-1A04-4154-86EF-F616E8512650}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingSpree", "ShoppingSpree\ShoppingSpree.csproj", "{5062E51C-D6B0-4B50-A786-C3630B66F505}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{061122FF-1A04-4154-86EF-F616E8512650}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{061122FF-1A04-4154-86EF-F616E8512650}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{061122FF-1A04-4154-86EF-F616E8512650}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5062E51C-D6B0-4B50-A786-C3630B66F505}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5062E51C-D6B0-4B50-A786-C3630B66F505}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5062E51C-D6B0-4B50-A786-C3630B66F505}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5062E51C-D6B0-4B50-A786-C3630B66F505}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
