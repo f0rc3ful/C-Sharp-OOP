@@ -18,8 +18,13 @@ class Person
             salary = value;
         }
     }
-    public Person()
+    public Person(int salary)
     {
+        this.Salary = salary; // the salary input is validated through the property and it's setter so if any changes to the validation logic were
+        // to be made, only the setter in the property would be referred to
+        // a way better alternative than this.salary = salary because accessing the field directly would bypass the setter logic 
+        // and if we were to set up another validation in the constructor, later on, when a change would be necessary, the code would require 
+        // multiple edits instead of only editing the setter in the property
     }
 
 }
@@ -27,8 +32,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Person person1 = new Person();
-        person1.Salary = 300;
+        Person person1 = new Person(300);
         Console.WriteLine(person1.Salary);
     }
 }
