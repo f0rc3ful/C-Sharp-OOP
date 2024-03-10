@@ -11,7 +11,7 @@ class Person
         }
         set
         {
-            if (value < 650)
+            if (value < 650) // the setter checks the forwarded value for the field salary and executes the logic to manipulate it if necessary
             {
                 value = 650;
             }
