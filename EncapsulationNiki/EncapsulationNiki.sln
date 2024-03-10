@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "setter - min salary", "sett
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassBoxData", "ClassBoxData\ClassBoxData.csproj", "{283104AC-F3F2-4854-B57C-1536690A3516}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingSpree", "ShoppingSpree\ShoppingSpree.csproj", "{97AE2911-7E10-4E63-81D3-B53D84B83083}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{283104AC-F3F2-4854-B57C-1536690A3516}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{283104AC-F3F2-4854-B57C-1536690A3516}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{283104AC-F3F2-4854-B57C-1536690A3516}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97AE2911-7E10-4E63-81D3-B53D84B83083}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97AE2911-7E10-4E63-81D3-B53D84B83083}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97AE2911-7E10-4E63-81D3-B53D84B83083}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97AE2911-7E10-4E63-81D3-B53D84B83083}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
