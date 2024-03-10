@@ -1,2 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿namespace ClassBoxData
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            Box box = new Box(3);
+        }
+    }
+}
