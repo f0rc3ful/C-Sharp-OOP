@@ -19,6 +19,7 @@
                     Person person = new Person(name, money);
                     personsList.Add(person);
                 }
+
                 for (int j = 0; j < productsData.Length; j+=2)
                 {
                     string name = productsData[j];
