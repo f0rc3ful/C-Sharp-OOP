@@ -17,12 +17,14 @@
                     string name = peopleData[i];
                     int money = int.Parse(peopleData[i + 1]);
                     Person person = new Person(name, money);
+                    personsList.Add(person);
                 }
-                for (int j = 0; j < productsData.Length; j++)
+                for (int j = 0; j < productsData.Length; j+=2)
                 {
                     string name = productsData[j];
                     int cost = int.Parse(productsData[j + 1]);
-                    Person person = new Person(name, cost);
+                    Product product = new Product(name, cost);
+                    productsList.Add(product);
                 }
             }
             catch (ArgumentException exception)
