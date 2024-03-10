@@ -4,8 +4,8 @@
 
 	public string FirstName
 	{
-		get { return firstName; }
-		private set { firstName = value; }
+		get { return firstName; } // the get method is used to retreive the firstName value outside the class
+		private set { firstName = value; } // the set value is used to forward the input value from the property to the private field
 	}
 	public Person(string firstName)
 	{
