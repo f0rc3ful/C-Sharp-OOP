@@ -37,14 +37,19 @@ namespace ShoppingSpree
 			}
 		}
 		private List<Product> bag;
-		public void AddProduct(Product product)
+        public List<Product> Bag 
+		{ 
+			get { return bag; }
+		}
+
+        public void AddProduct(Product product)
 		{
 			if (product.Cost > this.Money)
 			{
-				Console.WriteLine($"{nameof(Name)} can't afford {product.Name}");
-			}
-			bag.Add(product);
-			this.Money -= product.Cost;
+				throw new ArgumentException($"{this.Name} can't afford {product.Name}");
+            }
+                bag.Add(product);
+                this.Money -= product.Cost;
 		}
 
 		public Person(string name, int money)

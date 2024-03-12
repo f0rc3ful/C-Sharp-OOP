@@ -36,9 +36,33 @@
             string input;
             while ((input = Console.ReadLine()) != "END")
             {
-                string[] parts = input.Split(" ");
-                string name = parts[0];
-                string product = parts[1];
+                string[] tokens = input.Split(" ", StringSplitOptions.RemoveEmptyEntries);
+                Person person = personsList.Find(p => p.Name == tokens[0]);
+                Product product = productsList.Find(p => p.Name == tokens[1]);
+                try
+                {
+                    if (product is not null && person is not null)
+                    {
+                        person.AddProduct(product);
+                        Console.WriteLine($"{person.Name} bought {product.Name}");
+                    }
+                }
+                catch (ArgumentException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
+
+            foreach (var person in personsList)
+            {
+                if (person.Bag.Count == 0)
+                {
+                    Console.WriteLine($"{person.Name} - Nothing bought");
+                }
+                else
+                {
+                    Console.WriteLine($"{person.Name} - {string.Join(", ", person.Bag.Select(item => item.Name))}");
+                }
             }
         }
     }
