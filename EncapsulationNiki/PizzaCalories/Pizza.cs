@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace PizzaCalories
 {
-    internal class Pizza
+    public class Pizza
     {
-    }
+		private string name;
+
+		public string Name
+		{
+			get { return name; }
+			set { name = value; }
+		}
+		//add Dough
+		//add Toppings
+		//name, dough and toppings and fields??
+	}
 }

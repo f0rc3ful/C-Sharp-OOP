@@ -14,6 +14,7 @@ namespace PizzaCalories
 		{
 			get { return flourType; }
 			set { flourType = value; }
+
 		}
 
 	}
