@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace InterfacesAndAbstraction_Kostov
 {
-    public class Program
+    internal class Person
     {
-        static void Main(string[] args)
-        { 
-        
-        }
     }
 }
