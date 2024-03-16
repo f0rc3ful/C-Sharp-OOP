@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace InterfacesAndAbstraction_Kostov
 {
-    public class Program
+    public interface IPrintable
+    {
+        void Print(); 
+    }
+    class Program
     {
         static void Main(string[] args)
         { 
