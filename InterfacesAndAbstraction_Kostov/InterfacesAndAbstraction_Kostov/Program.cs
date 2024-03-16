@@ -8,7 +8,28 @@ namespace InterfacesAndAbstraction_Kostov
 {
     public interface IPrintable
     {
-        void Print(); 
+        void Print();
+        void PrintToPDF();
+    }
+    public interface ISavable
+    {
+        void SaveToFile(string fileName);
+    }
+
+    public class Doument : IPrintable, ISavable
+    { 
+        public void Print() 
+        {
+        
+        }
+        public void PrintToPDF()
+        { 
+        
+        }
+        public void SaveToFile(string fileName) 
+        {
+        
+        }
     }
     class Program
     {
