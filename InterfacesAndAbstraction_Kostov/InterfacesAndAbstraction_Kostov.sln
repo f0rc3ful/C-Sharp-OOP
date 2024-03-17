@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfacesAndAbstraction_Ko
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shapes", "Shapes\Shapes.csproj", "{726873B5-C8EB-4E11-A76E-7369AD63DC0E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Car", "Car\Car.csproj", "{BEEB85AE-F0B9-49BD-8643-2B5436B1F1FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{726873B5-C8EB-4E11-A76E-7369AD63DC0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{726873B5-C8EB-4E11-A76E-7369AD63DC0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{726873B5-C8EB-4E11-A76E-7369AD63DC0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEEB85AE-F0B9-49BD-8643-2B5436B1F1FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEEB85AE-F0B9-49BD-8643-2B5436B1F1FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEEB85AE-F0B9-49BD-8643-2B5436B1F1FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEEB85AE-F0B9-49BD-8643-2B5436B1F1FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
