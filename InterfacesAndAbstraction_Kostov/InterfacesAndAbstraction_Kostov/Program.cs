@@ -16,6 +16,30 @@ namespace InterfacesAndAbstraction_Kostov
         void SaveToFile(string fileName);
     }
 
+    public interface IDocument : IPrintable, ISavable
+    {
+        void CreateNewDoc()
+        { 
+        
+        }                       
+    }
+    public class Document : IDocument
+    {
+        public void Print()
+        {
+
+        }
+
+        public void PrintToPDF()
+        {
+
+        }
+
+        public void SaveToFile(string fileName)
+        {
+
+        }
+    }
     public class Doument : IPrintable, ISavable
     { 
         public void Print() 
