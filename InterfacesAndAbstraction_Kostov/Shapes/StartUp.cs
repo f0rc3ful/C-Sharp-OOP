@@ -20,15 +20,11 @@ namespace Shapes
 
             circle.Draw();
             rect.Draw();
-
         }
     }
     public interface IDrawable
     {
-        public void Draw()
-        { 
-        
-        }
+        public void Draw();
     }
     public class Circle : IDrawable
     {

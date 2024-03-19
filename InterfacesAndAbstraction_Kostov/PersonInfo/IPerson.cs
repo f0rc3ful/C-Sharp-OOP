@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Car
+namespace PersonInfo
 {
-    internal interface IElectricCar
+    public interface IPerson
     {
-        int Battery { get; set; }
+        public string Name { get; set; }
+        public int Age { get; set; }
     }
 }

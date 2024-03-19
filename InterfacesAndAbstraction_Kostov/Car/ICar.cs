@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Car
 {
-    internal class ICar
+    public interface ICar
     {
+        string Model { get; }
+        string Color { get; }
+        public void Start();
+        public void Stop();
     }
 }

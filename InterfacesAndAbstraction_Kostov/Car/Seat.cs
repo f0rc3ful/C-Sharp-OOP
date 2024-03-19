@@ -6,7 +6,22 @@ using System.Threading.Tasks;
 
 namespace Car
 {
-    internal class Seat
+    public class Seat : Car
     {
+        public Seat(string model, string color)
+            : base(model, color)
+        {
+
+        }
+
+        public override void Stop()
+        {
+
+        }
+
+        public override string ToString()
+        {
+            return //TO DO;
+        }
     }
 }

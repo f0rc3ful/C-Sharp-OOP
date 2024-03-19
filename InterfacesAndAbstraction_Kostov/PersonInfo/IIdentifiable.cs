@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Car
+namespace PersonInfo
 {
-    internal interface IElectricCar
+    public interface IIdentifiable
     {
-        int Battery { get; set; }
+        public string Id { get; set; }
     }
 }
