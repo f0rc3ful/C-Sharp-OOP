@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Telephony
 {
-    internal class ISmart
+    public interface ISmart
     {
+        public void BrowseWWW();
     }
 }

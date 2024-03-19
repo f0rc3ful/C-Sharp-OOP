@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Telephony
 {
-    internal class StationaryPhone
+    public class StationaryPhone : IStationary
     {
+        public void CallOtherPhones()
+        { 
+        
+        }
     }
 }

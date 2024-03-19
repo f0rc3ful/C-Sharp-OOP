@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace Telephony
 {
-    internal class Smartphone
+    public class Smartphone : ISmart, IStationary
     {
+        public void CallOtherPhones()
+        { 
+        
+        }
+        public void BrowseWWW()
+        { 
+        
+        }
     }
 }
