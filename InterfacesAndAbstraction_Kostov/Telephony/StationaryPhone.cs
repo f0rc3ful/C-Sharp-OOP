@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Telephony
 {
-    public class StationaryPhone : IStationary
+    public class StationaryPhone : ICaller
     {
-        public void CallOtherPhones()
-        { 
-        
+        public void Call(string number)
+        {
+            Console.WriteLine($"Dialing... {number}");
         }
     }
 }

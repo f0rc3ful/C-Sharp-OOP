@@ -6,15 +6,11 @@ using System.Threading.Tasks;
 
 namespace Telephony
 {
-    public class Smartphone : ISmart, IStationary
+    public class Smartphone : ICaller
     {
-        public void CallOtherPhones()
-        { 
-        
-        }
-        public void BrowseWWW()
-        { 
-        
+        public void Call(string number)
+        {
+            Console.WriteLine($"Calling... {number}");
         }
     }
 }
