@@ -46,7 +46,7 @@
                 }
                 if (valid) 
                 {
-                    Console.WriteLine($"Browsing: {website}");
+                    Console.WriteLine($"Browsing: {website}!");
                 }
 
             }
