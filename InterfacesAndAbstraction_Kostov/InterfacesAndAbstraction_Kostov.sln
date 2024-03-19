@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Car", "Car\Car.csproj", "{B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonInfo", "PersonInfo\PersonInfo.csproj", "{DB5CF5C7-D326-405D-B67A-25AE9D524BCE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telephony", "Telephony\Telephony.csproj", "{2CD7A72E-FA69-473C-9250-6F1B11216B05}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{DB5CF5C7-D326-405D-B67A-25AE9D524BCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB5CF5C7-D326-405D-B67A-25AE9D524BCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB5CF5C7-D326-405D-B67A-25AE9D524BCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CD7A72E-FA69-473C-9250-6F1B11216B05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CD7A72E-FA69-473C-9250-6F1B11216B05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CD7A72E-FA69-473C-9250-6F1B11216B05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CD7A72E-FA69-473C-9250-6F1B11216B05}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
